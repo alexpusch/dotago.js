@@ -1,0 +1,15 @@
+{
+  "name": "nope",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.9.0",
+    "sinon": "^9.0.2"
+  }
+}
