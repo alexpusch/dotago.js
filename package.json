@@ -1,12 +1,12 @@
 {
-  "name": "nope",
+  "name": "dotago",
   "version": "1.0.0",
-  "description": "",
+  "description": "Silly syntactic sugar for creating relative dates and time durations with Javascript",
   "main": "index.js",
   "scripts": {
     "test": "ava"
   },
-  "author": "",
+  "author": "Alex Puschinsky",
   "license": "ISC",
   "devDependencies": {
     "ava": "^3.9.0",
