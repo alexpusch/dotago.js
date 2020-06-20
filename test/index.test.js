@@ -2,10 +2,12 @@ const test = require('ava');
 const sinon = require('sinon');
 const dotago = require('../index');
 
+// eslint-disable-next-line no-unused-vars
 test.beforeEach(t => {
   dotago.load();
 })
 
+// eslint-disable-next-line no-unused-vars
 test.afterEach(t => {
   dotago.unload();
 })

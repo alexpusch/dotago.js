@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "test:watch": "ava --watch"
+    "test:watch": "ava --watch",
+    "lint": "eslint"
   },
   "author": "Alex Puschinsky",
   "license": "MIT",
   "devDependencies": {
     "ava": "^3.9.0",
+    "eslint": "^7.3.0",
     "sinon": "^9.0.2"
   }
 }
