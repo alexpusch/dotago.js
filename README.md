@@ -44,13 +44,16 @@ Usage
 `npm i --save dotago`
 
 ```js
-require('dotago');
+require('dotago').load();
 
 console.log(2..hours.fromNow.asDate)
 ```
 
 API
 ----
+- load() - monkeypatch Number.prototype with dotago methods
+- unload() - remove dotago methods from Number.prototype
+
 We add the following getter methods to Number.prototype
 - second/seconds
 - minute/minutes

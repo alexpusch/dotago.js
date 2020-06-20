@@ -1,7 +1,14 @@
 const test = require('ava');
 const sinon = require('sinon');
+const dotago = require('../index');
 
-require('../index');
+test.beforeEach(t => {
+  dotago.load();
+})
+
+test.afterEach(t => {
+  dotago.unload();
+})
 
 test('seconds', t => {
   t.is(1..seconds, 1000);
@@ -69,4 +76,10 @@ test('seconds from now', t => {
 
 test('asDate', t => {
   t.is(1500000000000..asDate.toISOString() , new Date(1500000000000).toISOString());
+})
+
+test('unload', t => {
+  dotago.unload();
+
+  t.is(1..seconds, undefined);
 })
