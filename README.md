@@ -34,7 +34,7 @@ Do math
 
 How does it work? 
 -----------------
-Our beloved javascript allows us to run methods on primitive numbers. The thing is that `1.foo()` is parsed as an illegal flout number. 
+Our beloved javascript allows us to run methods on primitive numbers. The thing is that `1.foo()` is parsed as an illegal Float number. 
 
 `1.` translates into `1.0` and so `1..foo()` translates into `1.0.foo()` which is totally legal Javascript. 
 
