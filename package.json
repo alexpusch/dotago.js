@@ -1,6 +1,6 @@
 {
   "name": "dotago",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Silly syntactic sugar for creating relative dates and time durations with Javascript",
   "main": "index.js",
   "scripts": {
