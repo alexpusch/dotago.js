@@ -7,7 +7,7 @@
     "test": "ava"
   },
   "author": "Alex Puschinsky",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "ava": "^3.9.0",
     "sinon": "^9.0.2"
