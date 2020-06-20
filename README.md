@@ -1,27 +1,35 @@
 dotago.js
 ==========
 
-Silly syntactic sugar for creating relative dates with Javascript
+Silly syntactic sugar for creating relative dates and time durations with Javascript
 
-work with dates:
+Work with dates:
 ```js
+// now: 2020-06-18T10:00:00Z
 1..minute.ago.asDate // 2020-06-18T09:59:00Z
-1..hour.ago.asDate // 2020-06-18T09:00:00Z
-1..hour.fromNow.asDate // 2020-06-18T11:00:00Z
+2..hours.ago.asDate // 2020-06-18T08:00:00Z
+3..hours.fromNow.asDate // 2020-06-18T13:00:00Z
 ```
 
-work with timestamps: 
+Work with timestamps: 
 ```js
+// now: 2020-06-18T10:00:00Z
 1..minute.ago // 1592474340000
 1..hour.ago // 1592470800000
 1..hour.fromNow // 1592478000000
 ```
 
-just get the duration in ms:
+Just get the duration in milliseconds:
 ```js
 1..second // 1000
 1..minute // 6000
 1..hour // 3600000
+```
+
+Do math
+```js
+// now: 2020-06-18T10:00:00Z
+(1..hour.ago + 2..minutes).asDate // 2020-06-18T09:02:00Z
 ```
 
 How does it work? 
@@ -38,7 +46,7 @@ Usage
 ```js
 require('dotago');
 
-console.log(1..hours.fromNow.asDate)
+console.log(2..hours.fromNow.asDate)
 ```
 
 API

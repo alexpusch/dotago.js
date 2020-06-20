@@ -43,6 +43,14 @@ test('week', t => {
   t.is(1..week, 1000 * 60 * 60 * 24 * 7);
 });
 
+test('floating numbers', t => {
+  t.is(1.5.minutes, 1000 * 60 * 1.5);
+})
+
+test('negative numbers', t => {
+  t.is(-2..minutes, -2 * 1000 * 60);
+})
+
 test('seconds ago', t => {
   sinon.useFakeTimers({
     now: 1500000000000
